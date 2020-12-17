@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form Validation</title>
+<script src= "wtl 3 js.js"></script>
+</head>
+<body>
+<h1>Form Validation</h1>
+	<p>Fill this form.</p>
+
+	<form>
+		<fieldset>
+			<legend>Information</legend>
+			<label for ="shippingName">Username:</label>
+			<input type = "text" name = "Username" id = "username" required><br/><br/>
+			<label for = "shippingZip">Email:</label>
+			<input type = "text" name = "Email" id = "email" pattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required><br/><br/>
+	    <label for = "shippingZip">Phone number:</label>
+			<input type = "text" name = "Phone number" id = "phone" pattern = "[0-9]{10}" required><br/><br/>
+      <label for = "shippingZip">Password:</label>
+			<input type = "text" name = "Password" id = "password" required><br/><br/>
+      <label for = "shippingZip">Confirm Password:</label>
+			<input type = "text" name = "Confirm Password" id = "confpass" required><br/><br/>
+      
+		</fieldset>	
+  		
+			<input type = "submit" value = "Verify" onclick= "Verify()"/>
+		</form>
+</body>
+</html>
